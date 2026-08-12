@@ -12,7 +12,7 @@ import SobreMim from "./pages/SobreMim";
 
 function App() {
   return (
-    <main className="min-h-screen bg-slate-300">
+    <main className="min-h-screen bg-white">
       <nav className="flex gap-6 bg-black p-4 text-white">
         <Link to={"/"} className="hover:underline">
           Home
