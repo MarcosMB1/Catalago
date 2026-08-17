@@ -14,7 +14,7 @@ function App() {
   return (
     <main>
       <Navbar></Navbar>
-    <Footer></Footer>
+
     </main>
   );
 }

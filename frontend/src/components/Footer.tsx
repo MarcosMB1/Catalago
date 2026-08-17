@@ -1,10 +1,32 @@
-
+import { Link, Routes, Route } from "react-router";
+import Home from "../pages/Home";
+import Catalogo from "../pages/Catalogo";
+import SobreMim from "../pages/SobreMim";
 
 function Footer() {
   return(
-    <footer>
-       <h1 className="bg-white text-black min-h-30">A</h1>
+    <main>
+      <footer className="h-10 min-w-screen bg-amber-50 ">
+        <Link to={"/Home"} className="hover:underline p-3">
+          Home
+        </Link>
+        <Link to={"/Catalogo"} className="hover:underline p-3">
+        Catalogo
+        </Link>
+        <Link to={"/SobreMim"} className="hover:underline p-3">
+        SobreMim
+        </Link>
+      <div>
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Catalogo" element={<Catalogo />} />
+          <Route path="/SobreMim" element={<SobreMim />} />
+        </Routes>
+      </div>
     </footer>
+    </main>
+   
+    
    
 
   );
