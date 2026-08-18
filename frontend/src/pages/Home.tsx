@@ -13,10 +13,12 @@
       <main className="min-h-screen flex flex-col justify-between"> 
          <div className="flex flex-row gap-5 justify-center items-center mt-5 border-4 border-black bg-red-500 text-white "> 
          <h1 className="text-white text-2xl">Bem-Vindo ao Game-World!!!</h1>
-          
          </div> 
          <div>
-             <h1 className="text-white text-5xl flex flex-row gap-5 justify-center h-100 mt-20 border-3 border-black  bg-black ">Jogos Do Catalago</h1>
+            <h1 className="text-white text-2xl flex flex-row gap-5 justify-center items-center mt-5 border-4 border-black bg-red-500">Está Página é Dedicada A Vários Gamers Do Mundo</h1>
+         </div>
+         <div>
+             <h1 className="text-white text-5xl flex flex-row gap-5 justify-center h-100 mt-20 border-3 border-black  bg-black ">🎮Jogos Em Catalago🎮</h1>
          </div>
            <div className="border-1 border-red-500 bg-black">
              <Carditem 
