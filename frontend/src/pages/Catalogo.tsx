@@ -9,22 +9,25 @@ import Footer from "../components/Footer"
 function Catalago() {
     return(
        <main>
-        <Carditem 
-        imagem={Terraria} botao="Ver jogo"
-        >    
-        </Carditem>
-        <Carditem 
-        imagem={MGS5}  botao="Ver jogo"
-        >    
-        </Carditem>
-        <Carditem 
-        imagem={Skyrim} botao="Ver jogo"
-        >    
-        </Carditem>
-        <Carditem 
-        imagem={DeathStranding}  botao="Ver jogo"
-        >    
-        </Carditem>
+        <div className="flex flex-row gap-5 justify-center mt-40 ">
+             <Carditem 
+            imagem={Terraria} botao="Ver jogo"
+            >    
+            </Carditem>
+            <Carditem 
+            imagem={MGS5}  botao="Ver jogo"
+            >    
+            </Carditem>
+            <Carditem 
+            imagem={Skyrim} botao="Ver jogo"
+            >    
+            </Carditem>
+            <Carditem 
+            imagem={DeathStranding}  botao="Ver jogo"
+            >    
+            </Carditem>
+        </div>
+       
         <Footer></Footer>
       
        </main>

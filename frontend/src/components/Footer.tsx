@@ -6,7 +6,7 @@ import SobreMim from "../pages/SobreMim";
 function Footer() {
   return(
     <main>
-      <footer className="h-10 min-w-screen bg-amber-50 ">
+      <footer className="h-20 min-w-screen bg-red-500 text-white mt-120">
         <Link to={"/Home"} className="hover:underline p-3">
           Home
         </Link>
