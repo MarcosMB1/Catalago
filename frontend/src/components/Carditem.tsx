@@ -1,22 +1,32 @@
-type props ={
-    imagem: string
-    botao: string
-}
+  import Botao from "../components/Botao";
 
-import Botao from "../components/Botao"
+  type CardProps = {
+    imagem: string;
+    botao: string; 
+    texto: string;
+  };
 
-
-
-function Card( { imagem,  botao } :props){
-    return(
-      <div className="border-3 border-red-500 bg-black">
-        <img src={`${imagem}`} alt="" className="h-100 w-80 "/>
-        <div className="flex flex-row gap-5 justify-center">
-        <Botao></Botao>
+  function Card({ imagem, botao, texto }: CardProps) {
+    return (
+      <div className="flex w-80 max-w-full flex-col justify-between border-2 border-red-500 bg-black p-5 rounded-lg shadow-lg">
+        <div className="h-48 w-full rounded-md">
+          <img 
+            src={imagem} 
+            alt="Imagem do card" 
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
         </div>
-       
+        
+        <div className="mt-4 flex flex-grow flex-col justify-between gap-4">
+          <p className="break-words leading-relaxed text-gray-300">
+            {texto}
+          </p>
+          <div className="mt-auto pt-2">
+          <Botao referencia="https://store.steampowered.com/app/105600/Terraria/"></Botao>
+          </div>
+        </div>
       </div>
     );
-}
+  }
 
-export default Card
+  export default Card;
